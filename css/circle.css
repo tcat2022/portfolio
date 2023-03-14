@@ -1,0 +1,159 @@
+.circle{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    z-index: 1;
+    transition: height 1s , width 1s ;
+  }
+
+  .circle:hover{
+    width: 150px;
+    height: 150px;
+  }
+
+
+  .circle:nth-child(2){
+    bottom: 50px;
+    left: 30px;
+    border: 2.5px solid var(--green);
+    animation: ani2 10s infinite linear alternate;
+  
+  }
+
+  .circle:nth-child(3) {
+    top: 150px;
+    left: 400px;
+    border: 2.5px solid var(--pink);
+    animation: ani3 15s linear  infinite alternate ;
+      
+  }
+  .circle:nth-child(4) {
+    bottom: 50px;
+   right: 30px;
+    border: 2.5px solid var(--pink);
+    animation: ani4 10s linear  infinite alternate;
+    }
+  .circle:nth-child(5){
+    bottom: 200px;
+    right: 300px;
+    border: 2.5px solid var(--green);
+    animation: ani5 10s linear  infinite alternate ;
+      
+  }
+  .circle:nth-child(6){
+   top: 50px;
+    right: 30px;
+    border: 2.5px solid var(--orange);
+    animation: ani6 10s linear  infinite alternate;
+
+    }
+  .circle:nth-child(7){
+    top: 50px;
+    left: 30px;
+    border: 2.5px solid var(--orange);
+    animation: ani7 15s linear infinite alternate;
+  }
+  .circle:nth-child(8){
+    bottom: 100px;
+   left: 350px;
+    border: 2.5px solid var(--orange);
+    animation: ani8 10s linear  infinite alternate;
+
+    }
+  .circle:nth-child(9){
+ top: -10px;
+   left: 300px;
+    border: 2.5px solid var(--pink);
+    animation: ani9 10s linear  infinite alternate;
+
+    }
+  .circle:nth-child(10){
+   top: 50px;
+    left: 750px;
+    border: 2.5px solid var(--green);
+    animation: ani10 10s linear  infinite alternate;
+
+    }
+
+  @keyframes ani2 {
+   
+    25%  { left:200px; bottom:30px; border: 3px solid var(--green);}
+    50%  {left:400px; bottom:100px;}
+    75%  {left:250px; bottom:200px; }
+    100% {left:0150px; bottom:30px;}
+  }
+  @keyframes ani3 {
+   
+    25%  { left:700px; top:100px;}
+    50%  {left:1000px; top:50px; border: 3px solid var(--pink);}
+    75%  {left:800px; top:200px;}
+    100% {left:550px; top:150px; }
+  }
+  @keyframes ani4 {
+   
+    25%  { right:200px; bottom:150px; }
+    50%  {right:300px; bottom:200px;}
+    75%  {right:200px; bottom:250px; border: 3px solid var(--pink);}
+    100% {right:150px; bottom:100px;}
+  }
+  @keyframes ani5 {
+    25%  { right:450px; bottom:150px;}
+    50%  {right:700px; bottom:100px;  border: 3px solid var(--green);}
+    75%  {right:520px; bottom:150px;}
+    100% {right:400px; bottom:200px; }
+  }
+  @keyframes ani6 {
+   
+    25%  { right:150px; top:-50px;}
+    50%  {right:200px; top:50px; }
+    75%  {right:150px; top:100px;}
+    100% {right:80px; top:50px; border: 3px solid var(--orange);}
+  }
+  @keyframes ani7 {
+   
+    25%  { left:200px; top:30px; }
+    50%  {left:400px; top:200px;}
+    75%  {left:250px; top:300px;  border: 3px solid var(--orange);}
+    100% {left:0150px; top:30px;}
+  }
+  @keyframes ani8 {
+       25%  { left:400px; bottom:20px;}
+    50%  {left:600px; bottom:0px; }
+    75%  {left:400px; bottom:5px;}
+    100% {left:250px; bottom:20px;  border: 3px solid var(--orange);}
+  }
+  @keyframes ani9 {
+   
+    25%  { left:300px; top:100px;  border: 3px solid var(--pink);}
+    50%  {left:400px; top:200px;}
+    75%  {left:500px; top:250px; }
+    100% {left:400px; top:100px;}
+  }
+  @keyframes ani10 {
+    25%  { left:650px; top:5px;}
+    50%  {left:550px; top:25px;  border: 3px solid var(--green);}
+    75%  {left:550px; top:160px;}
+    100% {left:620px; top:50px; }
+  }
+  
+  @media (max-width: 400px){
+    .circle:nth-child(5){
+      display: none;
+  }
+  .circle:nth-child(3){
+    display: none;
+}
+.circle:nth-child(6){
+  display: none;
+}
+.circle:nth-child(8){
+  display: none;
+}
+.circle:nth-child(9){
+  display: none;
+}
+.circle:nth-child(10){
+  display: none;
+}
+  }
