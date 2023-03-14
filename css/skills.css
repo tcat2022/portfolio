@@ -1,0 +1,84 @@
+:root{
+    --black: #001114; 
+    --aquaBlue:#20e5ff;
+    --orange:#ffb13d;
+    --green:#0af107;
+    --pink:#eb18bd;
+    --white:#fbfdfd;
+}
+
+#skills{
+    position: relative;
+}
+
+#position{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#skills-box{
+position: relative;
+width:280px ;
+height: 280px;
+transform-style: preserve-3d;
+animation: animate1 10s linear infinite;
+}
+
+@keyframes animate1{
+    0%{
+        transform:perspective(1000px) rotateY(0) ;
+    }
+    100%{
+        transform:perspective(1000px) rotateY(360deg) ;
+    }
+}
+
+#skills-box span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 120deg)) translateZ(250px);
+}
+
+#skills-box span img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.skill{
+    position: absolute;
+    bottom: -15%;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+#skill-title{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform:translate(-50%,-50%) ;
+    font-size: 3.5em;
+}
+
+@media (max-width: 400px) {
+    #skills-box{
+        width:180px ;
+        height: 180px;
+    }
+    #skills-box span{
+        transform: rotateY(calc(var(--i) * 120deg)) translateZ(120px);
+    }
+    #skill-title{
+        font-size: 2.5em;
+    }
+}
