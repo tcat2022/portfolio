@@ -184,7 +184,7 @@ br{
     #home{
         position: relative;
        max-width: 100%;
-       height:650px;
+       height:100vh;
     }
 
     #text{
