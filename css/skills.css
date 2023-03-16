@@ -9,11 +9,14 @@
 
 #skills{
     position: relative;
+    width: 100%;
+    height:800px;
+
 }
 
 #position{
     position: absolute;
-    left: 50%;
+    left: 75%;
     top: 50%;
     transform: translate(-50%,-50%);
 }
@@ -43,7 +46,7 @@ animation: animate1 10s linear infinite;
     height: 100%;
     transform-origin: center;
     transform-style: preserve-3d;
-    transform: rotateY(calc(var(--i) * 120deg)) translateZ(250px);
+    transform: rotateY(calc(var(--i) * 120deg)) translateZ(200px);
 }
 
 #skills-box span img{
@@ -55,22 +58,83 @@ animation: animate1 10s linear infinite;
     object-fit: cover;
 }
 
-.skill{
-    position: absolute;
-    bottom: -15%;
-    left: 50%;
-    transform: translate(-50%,0);
-}
 
 #skill-title{
     position: absolute;
-    top: 10%;
+    top: 1%;
     left: 50%;
     transform:translate(-50%,0) ;
     font-size: 3.5em;
 }
 
+#skill-container{
+width: 450px;
+height: 300px;
+position: relative;
+left: 5%;
+top: 32%;
+}
+
+.skill-ranks{
+    width: 450px;
+    height: 100px;
+    position: relative;
+    }    
+
+.title {
+    position: absolute;
+font-size: 2em;
+left: 50%;
+transform: translate(-50%,0);
+}
+
+.grey{
+    width: 400px;
+    height: 20px;
+    background: rgb(156, 156, 156);
+    position: absolute;
+    top: 53%;
+    left:50px;
+    border-radius: 20px;
+    }
+
+
+    .skill-ranks span{
+        width: 400px;
+        height: 20px;
+        position: absolute;
+        top: 53%;
+        left: 50px;
+        border-radius: 20px;
+        background: var(--aquaBlue);
+        z-index: 1;
+        }
+
+
+#html-rank{
+    width: 350px;
+}
+
+#css-rank{
+    width: 200px;
+}
+
+#js-rank{
+    width: 80px;
+}
+.percent{
+ position: absolute;
+top: 50%;
+left: 0;
+font-size: 1.5em;
+}
+
 @media (max-width: 400px) {
+    #position{
+        left: 50%;
+        top: 35%;
+    }
+    
     #skills-box{
         width:180px ;
         height: 180px;
@@ -80,6 +144,69 @@ animation: animate1 10s linear infinite;
     }
     #skill-title{
         font-size: 2.5em;
-        
+        top: 5%;
     }
+
+    #skill-container{
+        width: 300px;
+        height: 300px;
+        position: relative;
+        left: 2%;
+        top: 60%;
+        }
+
+    .skill-ranks{
+        width: 300px;
+        height: 100px;
+        position: relative;
+        }    
+    
+    .title {
+        position: absolute;
+    font-size: 2em;
+    left: 60%;
+    transform: translate(-50%,0);
+    }
+    
+    .grey{
+        width: 280px;
+        height: 20px;
+        background: rgb(156, 156, 156);
+        position: absolute;
+        top: 53%;
+        left:50px;
+        border-radius: 20px;
+        }
+    
+    
+        .skill-ranks span{
+            width: 280px;
+            height: 20px;
+            position: absolute;
+            top: 53%;
+            left: 50px;
+            border-radius: 20px;
+            background: var(--aquaBlue);
+            z-index: 1;
+            }
+    
+    
+    #html-rank{
+        width: 244px;
+    }
+    
+    #css-rank{
+        width: 134px;
+    }
+    
+    #js-rank{
+        width: 50px;
+    }
+    .percent{
+     position: absolute;
+    top: 50%;
+    left: 0;
+    font-size: 1.5em;
+    }
+    
 }
