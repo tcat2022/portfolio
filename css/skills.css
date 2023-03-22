@@ -143,7 +143,7 @@ font-size: 1.5em;
         transform: rotateY(calc(var(--i) * 120deg)) translateZ(120px);
     }
     #skill-title{
-        font-size: 2.5em;
+        font-size: 1.8em;
         top: 5%;
     }
 
@@ -151,7 +151,7 @@ font-size: 1.5em;
         width: 300px;
         height: 300px;
         position: relative;
-        left: 20px;
+        left: 15px;
         top: 60%;
         }
 
