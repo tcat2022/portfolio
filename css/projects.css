@@ -31,8 +31,50 @@ margin-right: 2%;
    width: 300px;
    height: 300px;
    transition: height 1s;
+   overflow: hidden;
+   position: relative;
 }
 
 .web-projects:hover{
     height: 500px;
+}
+
+
+.project-imgs{
+height: 100%;
+width: 100%;
+z-index: -1;
+}
+
+.project-titles{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform:translate(-50%,0) ;
+    font-size: 1.31em;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+@media (max-width: 420px) {
+    #projects-container{
+        width: 100%;
+height: 900px;
+flex-direction: column;
+    }
+
+    .web-projects{
+        border: 2px solid blue;
+       width: 100%;
+       height: 500px;
+       transition: height 1s;
+       overflow: hidden;
+       position: relative;
+       left: 0;
+       margin-bottom: 5%;
+    }
+
+    .web-projects:hover{
+        height: 700px;
+    }
 }
