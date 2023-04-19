@@ -22,6 +22,7 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 margin-right: 2%;
+overflow: hidden;
 }
 
 
@@ -30,31 +31,60 @@ margin-right: 2%;
     border: 2px solid blue;
    width: 300px;
    height: 300px;
-   transition: height 1s;
+   transition: transform 1s;
    overflow: hidden;
    position: relative;
 }
 
-.web-projects:hover{
-    height: 500px;
+.web-projects:hover > .project-imgs{
+    transform: scale(1.2);
+  
+}
+
+.project-imgs{
+max-width: 100%;
+z-index: -1;
+display: block;
+height: 100%;
+object-fit: cover;
+transition: transform .5s;
+}
+
+.web-projects:hover  .project-titles{
+    transform: translateY(-110px)   translate(-50%,0);
+ 
+}
+
+.web-projects:hover .color-layer{
+opacity: 100%;
 }
 
 
-.project-imgs{
-height: 100%;
+.color-layer{
 width: 100%;
-z-index: -1;
+height: 100%;
+background: linear-gradient(to bottom , rgba(0,0,0,0.6), var(--aquaBlue));
+position: absolute;
+left: 0;
+bottom: 0;
+overflow: hidden;
+opacity: 0;
+transition: .5s;
 }
 
 .project-titles{
     position: absolute;
     top: 80%;
     left: 50%;
-    transform:translate(-50%,0) ;
+    transform: translate(-50%,0);
     font-size: 1.31em;
-    color: whitesmoke;
+    color: var(--white);
     font-weight: bold;
+    transition: .5s;
+    opacity: 100%;
+    z-index: 1;
 }
+
 
 @media (max-width: 420px) {
     #projects-container{
