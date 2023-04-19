@@ -23,17 +23,19 @@ justify-content: space-between;
 align-items: center;
 margin-right: 2%;
 overflow: hidden;
+
 }
 
 
 
 .web-projects{
     border: 2px solid blue;
-   width: 300px;
    height: 300px;
+   width: 300px;
    transition: transform 1s;
    overflow: hidden;
    position: relative;
+   border-radius: 8px;
 }
 
 .web-projects:hover > .project-imgs{
@@ -59,6 +61,15 @@ transition: transform .5s;
 opacity: 100%;
 }
 
+.web-projects:hover .web-link{
+    transform: translateY(0) translate(-50%,-50%);
+   
+}
+
+.web-link:hover{
+    background: var(--aquaBlue);
+    color: white;
+}
 
 .color-layer{
 width: 100%;
@@ -77,7 +88,7 @@ transition: .5s;
     top: 80%;
     left: 50%;
     transform: translate(-50%,0);
-    font-size: 1.31em;
+    font-size: 20px;
     color: var(--white);
     font-weight: bold;
     transition: .5s;
@@ -85,6 +96,21 @@ transition: .5s;
     z-index: 1;
 }
 
+.web-link{
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%,-50%) translateY(20px);
+    color: var(--aquaBlue);
+    width: 60px;
+    height: 60px;
+    background: white;
+    font-size: 20px;
+  border-radius: 50%;
+  line-height: 60px;
+  text-align: center;
+  transition: .5s;
+}
 
 @media (max-width: 420px) {
     #projects-container{
