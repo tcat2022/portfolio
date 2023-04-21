@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="sendEmail(); reset(); return false;">
+        <input type="text" id="name" placeholder="your name" >
+        <input type="email" id="email" placeholder="your email" >
+        <textarea  id="message"  rows="6" placeholder="your message"></textarea>
+        <button type="submit">send</button>
+    </form>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+    SecureToken : "8bcdf2b2-f5ce-49ce-837d-df581fc98e83",
+    To : 'tcatty7@gmail.com',
+    From : "you@isp.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+        }
+    </script>
+</body>
+</html>

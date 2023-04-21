@@ -29,7 +29,7 @@ overflow: hidden;
 
 
 .web-projects{
-    border: 2px solid blue;
+    border: 2px solid var(--aquaBlue);
    height: 300px;
    width: 300px;
    transition: transform 1s;
