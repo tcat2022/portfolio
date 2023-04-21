@@ -81,12 +81,6 @@ opacity: .2;
   }
 }
 
-#email{
-    color: black;
-    background-color: cyan;
-font-size: 50px;
-text-decoration: none;
-}
 
 header{
   position: fixed;
