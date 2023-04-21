@@ -5,23 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        form{
+            width: 500px;
+            height: 400px;
+            background-color:cyan;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            display: flex;
+            flex-direction: column; 
+            text-align: center; 
+        }
+        input , textarea, h1{
+            width: 90%;
+          border-radius: 10px;
+          border: 1px solid black;
+          margin-top: 30px;
+          margin-left: 5%;
+        }
+
+        h1{
+    
+            border: none;
+        }
+
+        button{
+            position: absolute;
+            bottom: 25px;
+            left: 50%;
+            transform: translate(-50%,0);
+            border-radius: 10px;
+          border: 1px solid black;
+          width: 100px;
+          background: white;
+          
+        }
+        a{
+            color: black;
+            background-color: cyan;
+        }
+    </style>
 </head>
 <body>
+    <a href="https://tcat2022.github.io/portfolio">back to website</a>
     <form onsubmit="sendEmail(); reset(); return false;">
-        <input type="text" id="name" placeholder="your name" >
-        <input type="email" id="email" placeholder="your email" >
+        <h1>Email form</h1>
+        <input type="text" id="name" placeholder="your name" required>
+        <input type="email" id="email" placeholder="your email" required>
         <textarea  id="message"  rows="6" placeholder="your message"></textarea>
         <button type="submit">send</button>
     </form>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
         function sendEmail(){
-            Email.send({
-    SecureToken : "8bcdf2b2-f5ce-49ce-837d-df581fc98e83",
+      let message = document.getElementById("message").value 
+      let name = document.getElementById("name").value 
+      let email = document.getElementById("email").value 
+
+      let body = "Name: " + name + "<br/>Email: " + email + "<br/>message: " + message;
+
+Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "tcatty7@gmail.com",
+    Password : "F0EBF5E7816740FE9FAB5CAFC903B8CE4FBD",
     To : 'tcatty7@gmail.com',
-    From : "you@isp.com",
-    Subject : "This is the subject",
-    Body : "And this is the body"
+    From : "tcatty7@gmail.com",
+    Subject : "email sent from portfolio website",
+    Body : body
 }).then(
   message => alert(message)
 );
