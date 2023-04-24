@@ -132,8 +132,4 @@ flex-direction: column;
        left: 0;
        margin-bottom: 5%;
     }
-
-    .web-projects:hover{
-        height: 700px;
-    }
 }
