@@ -67,6 +67,7 @@ function sendEmail(){
   let message = document.getElementById("message").value 
   let name = document.getElementById("name").value 
   let email = document.getElementById("email").value 
+  let subject = document.getElementById("email-subject").value 
   
   let body = "Name: " + name + "<br/>Email: " + email + "<br/>message: " + message;
   
@@ -76,7 +77,7 @@ function sendEmail(){
   Password : "F0EBF5E7816740FE9FAB5CAFC903B8CE4FBD",
   To : 'tcatty7@gmail.com',
   From : "tcatty7@gmail.com",
-  Subject : "email sent from portfolio website",
+  Subject : subject,
   Body : body
   }).then(
   message => alert("thank you for sending me an email")
