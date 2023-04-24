@@ -114,7 +114,10 @@ transition: .5s;
 
 @media (max-width: 420px) {
     #projects-container{
-        width: 100%;
+       position: absolute;
+       left: 50%;
+       transform: translate(-50%,0);
+        width: 90%;
 height: 900px;
 flex-direction: column;
     }
