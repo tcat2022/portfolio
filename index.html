@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/skills.css">
     <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/contact.css">
     <title>Thomas's Portfolio</title>
 </head>
 <body onload="myFunction(); initEmail(); initEmail1();">
@@ -141,118 +142,19 @@
   <span id="link4" class="links"></span>
 </section>
 <section>
-<style>
-
-  form{
-      width: 500px;
-      height: 400px;
-      background-color:cyan;
-      position: absolute;
-      left: 50%;
-      top: 30%;
-      transform: translate(-50%,-30%);
-      display: flex;
-      flex-direction: column; 
-      text-align: center; 
-  }
-.email{
-      width: 90%;
-    border-radius: 10px;
-    border: 1px solid black;
-    margin-top: 30px;
-    margin-left: 5%;
-  }
-
-  #email{
-    width: 90%;
-    border-radius: 10px;
-    border: 1px solid black;
-    margin-top: 30px;
-    margin-left: 5%;
-  }
-
-#eh{
-  border: none;
-  font-size: 50px;
-}
-
-  #submit{
-      position: absolute;
-      bottom: 25px;
-      left: 50%;
-      transform: translate(-50%,0);
-      border-radius: 10px;
-    border: 1px solid black;
-    width: 100px;
-    background: white;
-    
-  }
-
-</style>
 <form onsubmit="sendEmail(); reset(); return false;">
-  <h1 class="email" id="eh">Email form</h1>
+  <h1  id="eh">Email form</h1>
   <input type="text" id="name" placeholder="your name" required class="email">
   <input type="email" id="email" placeholder="your email" required class="email">
-  <textarea  id="message"  rows="6" placeholder="your message" class="email"></textarea>
+  <input type="text" placeholder="Email Subject" id="email-subject" class="email">
+  <textarea  id="message"  rows="6" maxlength="5.9" placeholder="your message" class="email"></textarea>
   <button type="submit" id="submit">send</button>
 </form>
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-<script>
-  function sendEmail(){
-let message = document.getElementById("message").value 
-let name = document.getElementById("name").value 
-let email = document.getElementById("email").value 
-
-let body = "Name: " + name + "<br/>Email: " + email + "<br/>message: " + message;
-
-Email.send({
-Host : "smtp.elasticemail.com",
-Username : "tcatty7@gmail.com",
-Password : "F0EBF5E7816740FE9FAB5CAFC903B8CE4FBD",
-To : 'tcatty7@gmail.com',
-From : "tcatty7@gmail.com",
-Subject : "email sent from portfolio website",
-Body : body
-}).then(
-message => alert("thank you for sending me an email")
-);
-  }
-
-function initEmail(){
-  Email.send({
-Host : "smtp.elasticemail.com",
-Username : "tcatty7@gmail.com",
-Password : "F0EBF5E7816740FE9FAB5CAFC903B8CE4FBD",
-To : 'tcatty7@gmail.com',
-From : "tcatty7@gmail.com",
-Subject : "email sent from portfolio website",
-Body : body
-}).then(
-
-);
-}
-function initEmail1(){
-  Email.send({
-Host : "smtp.elasticemail.com",
-Username : "tcatty7@gmail.com",
-Password : "F0EBF5E7816740FE9FAB5CAFC903B8CE4FBD",
-To : 'tcatty7@gmail.com',
-From : "tcatty7@gmail.com",
-Subject : "email sent from portfolio website",
-Body : body
-}).then(
-
-);
-}
-</script>
-  <span id="link5" class="links"></span>
+ <span id="link5" class="links"></span>
 </section>
 </div>
 </div>
-
-<script src="script.js">
-
-</script>
-
+<script src=" https://smtpjs.com/v3/smtp.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

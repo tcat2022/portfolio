@@ -1,3 +1,5 @@
+//making mobile menu icon dissapear
+
 function myFunction() {
     myVar = setTimeout(showPage, 4100);
    myvar = setTimeout(load,3000)
@@ -20,6 +22,7 @@ function myFunction() {
   let a4 = document.getElementById("a4");
   let a5 = document.getElementById("a5");
 ;
+//sending email from form
 
     bar.addEventListener(('click'), function(){
       bar.style.display = "none"
@@ -60,3 +63,49 @@ function add(){
   a5.addEventListener('click', disaper)
 }
 
+function sendEmail(){
+  let message = document.getElementById("message").value 
+  let name = document.getElementById("name").value 
+  let email = document.getElementById("email").value 
+  
+  let body = "Name: " + name + "<br/>Email: " + email + "<br/>message: " + message;
+  
+  Email.send({
+  Host : "smtp.elasticemail.com",
+  Username : "tcatty7@gmail.com",
+  Password : "F0EBF5E7816740FE9FAB5CAFC903B8CE4FBD",
+  To : 'tcatty7@gmail.com',
+  From : "tcatty7@gmail.com",
+  Subject : "email sent from portfolio website",
+  Body : body
+  }).then(
+  message => alert("thank you for sending me an email")
+  );
+    }
+  
+  function initEmail(){
+    Email.send({
+  Host : "smtp.elasticemail.com",
+  Username : "tcatty7@gmail.com",
+  Password : "F0EBF5E7816740FE9FAB5CAFC903B8CE4FBD",
+  To : 'tcatty7@gmail.com',
+  From : "tcatty7@gmail.com",
+  Subject : "email sent from portfolio website",
+  Body : body
+  }).then(
+  
+  );
+  }
+  function initEmail1(){
+    Email.send({
+  Host : "smtp.elasticemail.com",
+  Username : "tcatty7@gmail.com",
+  Password : "F0EBF5E7816740FE9FAB5CAFC903B8CE4FBD",
+  To : 'tcatty7@gmail.com',
+  From : "tcatty7@gmail.com",
+  Subject : "email sent from portfolio website",
+  Body : body
+  }).then(
+  
+  );
+  }
