@@ -120,6 +120,7 @@ transition: .5s;
         }
 
     #projects-container{
+        width: 100%;
        position: absolute;
        left: 50%;
        transform: translate(-50%,0);
@@ -130,8 +131,8 @@ flex-direction: column;
 
     .web-projects{
         border: 2px solid var(--aquaBlue);
-       height: 300px;
-       width: 300px;
+       height: 320px;
+       width: 320px;
        transition: transform 1s;
        overflow: hidden;
        position: relative;
