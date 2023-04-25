@@ -123,20 +123,20 @@ transition: .5s;
         width: 100%;
        position: absolute;
        left: 50%;
-       transform: translate(-50%,0);
-        width: 90%;
+       top: 20%;
+       transform: translate(-50%,-10%);
 height: 900px;
 flex-direction: column;
     }
 
     .web-projects{
-        border: 2px solid var(--aquaBlue);
-       height: 320px;
-       width: 320px;
+        
+       height: 300px;
+       width: 330px;
        transition: transform 1s;
        overflow: hidden;
        position: relative;
-       border-radius: 8px;
+       border-radius: 5px;
        margin-bottom: 20px;
     }
     .project-imgs{
