@@ -16,17 +16,17 @@ form{
     text-align: center; 
     overflow: hidden;
 }
-.email{
+.email input, #message{
     width: 90%;
   border: 2px solid black;
-  margin-top: 25px;
+  margin-top: 20px;
   margin-left: 5%;
   background: white;
   resize: none;
-  padding: 3px ;
+  padding: 5px ;
   border-radius: 10px;
 }
-.email:focus{
+.email input:focus , #message:focus{
     border: 2.5px solid black;  
     outline: none;
   }
@@ -38,7 +38,7 @@ font-size: 50px;
 
 #submit{
     position: absolute;
-    bottom: 20px;
+    bottom: 10px;
     left: 50%;
     transform: translate(-50%,0);
   border: 2px solid black;
@@ -47,7 +47,30 @@ font-size: 50px;
   
 }
 
+#email-wraper{
+    position: relative;
+}
 
+.placeholder{
+    position: absolute;
+    left: 9%;
+    margin-top: 25px;
+    color: black;
+    pointer-events: none;
+    transition: 0.2s;
+}
+
+.email input:focus ~ .placeholder,
+.email input:valid ~ .placeholder,
+#message:focus ~ .placeholder,
+#message:valid ~ .placeholder{
+    background: white;
+    margin-top: 12px;
+    font-size: 0.65em;
+    border-radius: 50px;
+ padding: 0 8px;
+    border: 2px solid black;
+}
 
 @media (max-width: 420px){
     #contact{

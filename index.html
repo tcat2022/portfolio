@@ -145,10 +145,24 @@
 <section id="contact">
 <form onsubmit="sendEmail(); reset(); return false;">
   <h1  id="eh">Contact Me</h1>
-  <input type="text" id="name" placeholder="Name" required class="email">
-  <input type="email" id="email" placeholder="Email" required class="email">
-  <input type="text" placeholder=" Subject" id="email-subject" class="email">
-  <textarea  id="message"  rows="6"  placeholder="Message" class="email"></textarea>
+  <div id="email-wraper">
+<div class="email">
+  <input type="text" id="name" required autocomplete="off">
+  <span class="placeholder">Name</span>
+</div>
+<div class="email">
+  <input type="text" id="email" required autocomplete="off">
+  <span class="placeholder">Email</span>
+</div>
+<div class="email">
+  <input type="text" required  id="email-subject" autocomplete="off">
+  <span class="placeholder">Subject</span>
+</div>
+<div class="email">
+  <textarea  id="message"  rows="6"  required autocomplete="off"></textarea>
+  <span class="placeholder">Message</span>
+</div>
+</div>
   <button type="submit" id="submit">send</button>
 </form>
  <span id="link5" class="links"></span>
