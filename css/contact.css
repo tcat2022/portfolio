@@ -8,6 +8,7 @@
 }
 
 
+
 #contact{
     position: relative;
     width: 100%;
@@ -25,8 +26,8 @@ form{
     flex-direction: column; 
     text-align: center; 
     overflow: hidden;
-    box-shadow: 5px 5px 25px rgb(8, 27, 39),
-   -5px -5px 25px rgb(42, 53, 61);
+    box-shadow: 5px 5px 25px #02313a,
+   -5px -5px 25px #5bdaf3;
 border: 2px solid var(--aquuaBlue);
 }
 
