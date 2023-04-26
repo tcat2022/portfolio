@@ -110,3 +110,7 @@ function sendEmail(){
   
   );
   }
+
+  function thanks(){
+    alert("thanks for downloading my CV \n it doesent actually work :)")
+  }
