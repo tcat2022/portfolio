@@ -16,7 +16,7 @@
 form{
     width: 500px;
     height: 400px;
-    background:linear-gradient(to bottom right,#91e1f1,#02313a,#91e1f1,#02313a,#91e1f1);
+    background:linear-gradient(to bottom right,#36a9c0,#02313a,#36a9c0,#02313a,#36a9c0);
     position: absolute;
     left: 50%;
     top: 30%;
@@ -80,9 +80,9 @@ font-size: 50px;
 .email input:valid ~ .placeholder,
 #message:focus ~ .placeholder,
 #message:valid ~ .placeholder{
-    background:linear-gradient(to bottom ,#91e1f1,#02313a);
-    margin-top: 12px;
-    font-size: 0.65em;
+    background:linear-gradient(to bottom, #02313a,#36a9c0);
+    margin-top: 10px;
+    font-size: 0.68em;
     border-radius: 50px;
  padding: 0 8px;
     border: 2px solid var(--aquuaBlue);
@@ -98,7 +98,6 @@ font-size: 50px;
     form{
         width: 90%;
         height: 400px;
-        background-color:cyan;
         position: absolute;
         left: 50%;
         top: 10%;
