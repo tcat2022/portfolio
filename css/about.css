@@ -189,10 +189,10 @@ position: absolute;
        height: 900px; 
     }
     #wrap{
-      left: 1%;
+      left: 50%;
       top:0;
-      transform: translate(0,0);
-      width:98%;
+      transform: translate(-50%,0);
+      width:95%;
       height: 400px;
     }
     .interaction{
@@ -204,9 +204,9 @@ position: absolute;
 }
 #aboutme{
     top: 470px;
-    width: 100%;
-    left: 0;
-    transform: translate(0,0);
+    width: 95%;
+    left: 50%;
+    transform: translate(-50%,0);
 }
 #aboutme div p{
     font-size: 1.4em;
