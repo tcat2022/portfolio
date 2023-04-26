@@ -186,7 +186,7 @@ position: absolute;
 
 @media (max-width: 420px) {
     #about{
-       height: 900px; 
+       height: 1050px; 
     }
     #wrap{
       left: 50%;
