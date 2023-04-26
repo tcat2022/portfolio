@@ -192,7 +192,7 @@ position: absolute;
       left: 50%;
       top:0;
       transform: translate(-50%,0);
-      width:95%;
+      width:90%;
       height: 400px;
     }
     .interaction{
@@ -204,7 +204,7 @@ position: absolute;
 }
 #aboutme{
     top: 470px;
-    width: 95%;
+    width: 90%;
     left: 50%;
     transform: translate(-50%,0);
 }
@@ -214,7 +214,7 @@ position: absolute;
 #aboutme div  span{
     position: absolute;
         width: 400px;
-        height: 370px;
+        height: 390px;
        
     }
 }
