@@ -1,77 +1,81 @@
-:root{
-    --black: #001114; 
-    --aquuaBlue:#20e5ff;
-    --orange:#ffb13d;
-    --green:#0af107;
-    --pink:#eb18bd;
-    --white:#fbfdfd;
+:root {
+    --black: #001114;
+    --aquuaBlue: #20e5ff;
+    --orange: #ffb13d;
+    --green: #0af107;
+    --pink: #eb18bd;
+    --white: #fbfdfd;
 }
 
 
 
-#contact{
+#contact {
     position: relative;
     width: 100%;
-    height:600px;
+    height: 600px;
 }
-form{
+
+form {
     width: 500px;
     height: 400px;
-    background:linear-gradient(to bottom right,#5bdaf3,#02313a,#5bdaf3,#02313a,#5bdaf3);
+    background: linear-gradient(to bottom right, #5bdaf3, #02313a, #5bdaf3, #02313a, #5bdaf3);
     position: absolute;
     left: 80%;
     top: 50%;
-    transform: translate(-70%,-50%);
+    transform: translate(-70%, -50%);
     display: flex;
-    flex-direction: column; 
-    text-align: center; 
+    flex-direction: column;
+    text-align: center;
     overflow: hidden;
-border: 2px solid var(--aquuaBlue);
+    border: 2px solid var(--aquuaBlue);
 }
 
 
-.email input, #message{
+.email input,
+#message {
     width: 90%;
-  border: 2px solid var(--aquuaBlue);
-  margin-top: 30px;
-  margin-left: 2%;
-  background:linear-gradient(to top left ,rgb(5, 5, 5),rgb(1, 29, 46), rgb(5, 5, 5));
-  resize: none;
-  padding: 5px ;
-  border-radius: 10px;
-  color: var(--white);
+    border: 2px solid var(--aquuaBlue);
+    margin-top: 30px;
+    margin-left: 2%;
+    background: linear-gradient(to top left, rgb(5, 5, 5), rgb(1, 29, 46), rgb(5, 5, 5));
+    resize: none;
+    padding: 5px;
+    border-radius: 10px;
+    color: var(--white);
 }
-.email input:focus , #message:focus{
-    border: 2.5px solid var(--aquuaBlue);  
+
+.email input:focus,
+#message:focus {
+    border: 2.5px solid var(--aquuaBlue);
     outline: none;
-  }
-
-#eh{
-border: none;
-font-size: 50px;
-position: absolute;
-top: 5%;
-left: 12%;
-transform: translate(-20%,0);
 }
 
-#submit{
+#eh {
+    border: none;
+    font-size: 50px;
+    position: absolute;
+    top: 5%;
+    left: 12%;
+    transform: translate(-20%, 0);
+}
+
+#submit {
     position: absolute;
     bottom: 20px;
     left: 50%;
-    transform: translate(-50%,0);
-  border: 2px solid var(--aquuaBlue);
-  background:linear-gradient(to top left ,rgb(5, 5, 5),rgb(1, 29, 46), rgb(5, 5, 5));
-  width: 100px;
-  color: var(--white);
-  font-size: 20px;
+    transform: translate(-50%, 0);
+    border: 2px solid var(--aquuaBlue);
+    background: linear-gradient(to top left, rgb(5, 5, 5), rgb(1, 29, 46), rgb(5, 5, 5));
+    width: 100px;
+    color: var(--white);
+    font-size: 20px;
 }
 
-#email-wraper{
+#email-wraper {
     position: relative;
 }
 
-.placeholder{
+.placeholder {
     position: absolute;
     left: 7%;
     margin-top: 35px;
@@ -80,50 +84,52 @@ transform: translate(-20%,0);
     transition: 0.2s;
 }
 
-.email input:focus ~ .placeholder,
-.email input:valid ~ .placeholder,
-#message:focus ~ .placeholder,
-#message:valid ~ .placeholder{
-    background:linear-gradient(to top left,#5bdaf3,#02313a);
+.email input:focus~.placeholder,
+.email input:valid~.placeholder,
+#message:focus~.placeholder,
+#message:valid~.placeholder {
+    background: linear-gradient(to top left, #5bdaf3, #02313a);
     margin-top: 20px;
     font-size: 0.68em;
     border-radius: 50px;
- padding: 0 8px;
+    padding: 0 8px;
     border: 2px solid var(--aquuaBlue);
     font-weight: 1000;
 }
 
-#github{
-width: 300px;
-height:50% ;
-padding:30px ;
-position: relative;
-top: 30%;
-left: 5%;
-border: 2px solid var(--aquuaBlue);
-}
-#git{
-position: absolute;
-top: 10%;
-left: 50%;
-transform: translate(-50%,0);
-text-align: center;
-}
-#github  i{
-position: absolute;
-top: 30%;
-left: 50%;
-color: white;
-font-size: 30px;
-transition: .2s;
-transform: translate(-50%,0);
+#github {
+    width: 300px;
+    height: 50%;
+    padding: 30px;
+    position: relative;
+    top: 30%;
+    left: 5%;
+    border: 2px solid var(--aquuaBlue);
 }
 
-#cv{
+#git {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+}
+
+#github i {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    color: white;
+    font-size: 30px;
+    transition: .2s;
+    transform: translate(-50%, 0);
+}
+
+#cv {
     position: absolute;
     top: 60%;
     left: 50%;
-    transform: translate(-50%,0); 
+    transform: translate(-50%, 0);
     background: var(--aquuaBlue);
     padding: 5px;
     border-radius: 10px;
@@ -133,90 +139,94 @@ transform: translate(-50%,0);
     cursor: pointer;
 }
 
-#contact-wraper{
+#contact-wraper {
     width: 90%;
     height: 100%;
     position: relative;
     border: 2px solid var(--aquuaBlue);
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
-@media (max-width: 420px){
-    #contact{
+@media (max-width: 420px) {
+    #contact {
         position: relative;
         width: 100%;
-        height:850px;
+        height: 850px;
     }
 
-    #contact-wraper{
+    #contact-wraper {
         width: 90%;
         height: 90%;
         position: relative;
         border: 2px solid var(--aquuaBlue);
         left: 50%;
         top: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
     }
-    
-    form{
+
+    form {
         width: 90%;
         height: 400px;
         position: absolute;
         left: 50%;
         top: 15%;
-        transform: translate(-50%,0);
+        transform: translate(-50%, 0);
         display: flex;
-        flex-direction: column; 
-        text-align: center; 
+        flex-direction: column;
+        text-align: center;
         overflow: hidden;
     }
-    #github{
+
+    #github {
         width: 300px;
-        height:25% ;
-        padding:30px ;
+        height: 25%;
+        padding: 30px;
         position: relative;
         top: 95%;
         left: 50%;
-        transform: translate(-50%,-90%);
+        transform: translate(-50%, -90%);
         border: 2px solid var(--aquuaBlue);
-        }
-        #git{
+    }
+
+    #git {
         position: absolute;
         top: 10%;
         left: 50%;
-        transform: translate(-50%,0);
+        transform: translate(-50%, 0);
         text-align: center;
-        }
-        #github  i{
+    }
+
+    #github i {
         position: absolute;
         top: 30%;
         left: 50%;
         color: white;
         font-size: 30px;
         transition: .2s;
-        transform: translate(-50%,0);
-        }
-        
-        #cv{
-            position: absolute;
-            top: 60%;
-            left: 50%;
-            transform: translate(-50%,0); 
-            background: var(--aquuaBlue);
-            padding: 5px;
-            border-radius: 10px;
-            transition: .2s;
-            width: 200px;
-            padding: 2px;
-            cursor: pointer;
-        }
-        #eh{
-            border: none;
-            font-size: 40px;
-            position: absolute;
-            top: 4%;
-            left: 30%;
-            }
+        transform: translate(-50%, 0);
+    }
+
+    #cv {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        background: var(--aquuaBlue);
+        padding: 5px;
+        border-radius: 10px;
+        transition: .2s;
+        width: 200px;
+        padding: 2px;
+        cursor: pointer;
+    }
+
+    #eh {
+        border: none;
+        font-size: 40px;
+        position: absolute;
+        top: 4%;
+        left: 30%;
+    }
 }

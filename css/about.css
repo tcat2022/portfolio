@@ -1,121 +1,137 @@
-:root{
-    --black: #001114; 
-    --aquaBlue:#20e5ff;
-    --orange:#ffb13d;
-    --green:#0af107;
-    --pink:#eb18bd;
-    --white:#fbfdfd;
+:root {
+    --black: #001114;
+    --aquaBlue: #20e5ff;
+    --orange: #ffb13d;
+    --green: #0af107;
+    --pink: #eb18bd;
+    --white: #fbfdfd;
 }
 
 
 
-#about{
+#about {
     width: 100%;
-    height:900px;
+    height: 900px;
     position: relative;
     border: none;
 }
-#wrap{
+
+#wrap {
     position: relative;
     top: 50%;
-    transform: translate(0,-50%);
+    transform: translate(0, -50%);
     left: 50px;
-    width:400px;
+    width: 400px;
     height: 500px;
-border-radius:5% ;
+    border-radius: 5%;
 }
 
-#image{
+#image {
     transition: transform .4s;
     width: 100%;
     height: 100%;
-    }
+}
 
- #image img{
+#image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius:5% ;
+    border-radius: 5%;
     border: 3px solid white;
 
 }
 
-.interaction{
+.interaction {
     width: 200px;
     height: 125px;
     position: absolute;
-    border-radius:5% ;
+    border-radius: 5%;
     z-index: 1;
 }
 
-#hover1{
+#hover1 {
     top: 0;
     left: 0;
 }
-#hover1:hover ~ #image {
+
+#hover1:hover~#image {
     transform: rotateX(12deg) rotateY(-15deg);
 }
 
-#hover2{
+#hover2 {
     top: 0;
     right: 0;
 }
-#hover2:hover ~ #image {
+
+#hover2:hover~#image {
     transform: rotateX(-12deg) rotateY(-20deg);
 }
-#hover3{
+
+#hover3 {
     bottom: 0;
-   left: 0;
+    left: 0;
 }
-#hover3:hover ~ #image {
+
+#hover3:hover~#image {
     transform: rotateX(-12deg) rotateY(15deg);
 }
-#hover4{
+
+#hover4 {
     bottom: 0;
     right: 0;
 }
-#hover4:hover ~ #image {
+
+#hover4:hover~#image {
     transform: rotateX(-12deg) rotateY(-15deg);
 }
-#hover5{
+
+#hover5 {
     bottom: 50%;
     right: 0;
 }
-#hover5:hover ~ #image {
+
+#hover5:hover~#image {
     transform: rotateX(-5deg) rotateY(-20deg);
 }
-#hover6{
+
+#hover6 {
     bottom: 50%;
     left: 0;
 }
-#hover6:hover ~ #image {
-    transform: rotateX(5deg) rotateY(-20deg);
-}
-#hover7{
-    top: 50%;
-    right: 0;
-}
-#hover7:hover ~ #image {
-    transform: rotateX(-5deg) rotateY(-20deg);
-}
-#hover8{
-    top: 50%;
-    left:0;
-}
-#hover8:hover ~ #image {
+
+#hover6:hover~#image {
     transform: rotateX(5deg) rotateY(-20deg);
 }
 
-#aboutme{
-    position: absolute;
-    left:600px;
+#hover7 {
     top: 50%;
-    transform: translate(0,-50%);
+    right: 0;
+}
+
+#hover7:hover~#image {
+    transform: rotateX(-5deg) rotateY(-20deg);
+}
+
+#hover8 {
+    top: 50%;
+    left: 0;
+}
+
+#hover8:hover~#image {
+    transform: rotateX(5deg) rotateY(-20deg);
+}
+
+#aboutme {
+    position: absolute;
+    left: 600px;
+    top: 50%;
+    transform: translate(0, -50%);
     width: 515px;
     height: 250px;
 
 }
-#aboutme div{
+
+#aboutme div {
     position: relative;
     padding-top: 10px;
     padding-right: 10px;
@@ -126,96 +142,106 @@ border-radius:5% ;
 }
 
 
-#aboutme div p{
+#aboutme div p {
     font-size: 1.5em;
-  background: #001114;
-  padding: 15px 10px 15px 25px;
+    background: #001114;
+    padding: 15px 10px 15px 25px;
 }
 
-#aboutme div  span{
-position: absolute;
+#aboutme div span {
+    position: absolute;
     width: 500px;
     height: 325px;
-   
+
 }
 
-#aboutme div span:nth-child(5){
-   top: -50%;
-   left: -50%;
-   z-index: -1;
-   animation: animate 4s linear infinite;
-   transform-origin: bottom right;
-   background:var(--aquaBlue);
+#aboutme div span:nth-child(5) {
+    top: -50%;
+    left: -50%;
+    z-index: -1;
+    animation: animate 4s linear infinite;
+    transform-origin: bottom right;
+    background: var(--aquaBlue);
 }
-#aboutme div span:nth-child(4){
+
+#aboutme div span:nth-child(4) {
     top: -50%;
     left: -50%;
     z-index: -1;
     animation: animate 4s linear infinite;
     animation-delay: 1s;
     transform-origin: bottom right;
-    background:var(--pink);
- }
- #aboutme div span:nth-child(3){
+    background: var(--pink);
+}
+
+#aboutme div span:nth-child(3) {
     top: -50%;
     left: -50%;
     z-index: -1;
     animation: animate 4s linear infinite;
     animation-delay: 2s;
     transform-origin: bottom right;
-    background:var(--green);
- }
- #aboutme div span:nth-child(2){
+    background: var(--green);
+}
+
+#aboutme div span:nth-child(2) {
     top: -50%;
     left: -50%;
     z-index: -1;
     animation: animate 4s linear infinite;
     animation-delay: 3s;
     transform-origin: bottom right;
-    background:var(--orange);
- }
+    background: var(--orange);
+}
 
-@keyframes animate{
-    0%{
+@keyframes animate {
+    0% {
         transform: rotate(0deg);
     }
-    100%{
+
+    100% {
         transform: rotate(360deg);
     }
 }
 
 @media (max-width: 420px) {
-    #about{
+    #about {
         margin-top: 150px;
-       height: 1050px; 
+        height: 1050px;
     }
-    #wrap{
-      left: 50%;
-      top:0;
-      transform: translate(-50%,0);
-      width:90%;
-      height: 400px;
+
+    #wrap {
+        left: 50%;
+        top: 0;
+        transform: translate(-50%, 0);
+        width: 90%;
+        height: 400px;
     }
-    .interaction{
-    display: none;
-}
-#image img{
-    border-radius: 15px;
-    
-}
-#aboutme{
-    top: 470px;
-    width: 90%;
-    left: 50%;
-    transform: translate(-50%,0);
-}
-#aboutme div p{
-    font-size: 1.4em;
-}
-#aboutme div  span{
-    position: absolute;
+
+    .interaction {
+        display: none;
+    }
+
+    #image img {
+        border-radius: 15px;
+
+    }
+
+    #aboutme {
+        top: 470px;
+        width: 90%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    #aboutme div p {
+        font-size: 1.4em;
+    }
+
+    #aboutme div span {
+        position: absolute;
         width: 400px;
         height: 390px;
-       
+
     }
 }

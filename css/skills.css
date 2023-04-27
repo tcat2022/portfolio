@@ -1,44 +1,45 @@
-:root{
-    --black: #001114; 
-    --aquaBlue:#20e5ff;
-    --orange:#ffb13d;
-    --green:#0af107;
-    --pink:#eb18bd;
-    --white:#fbfdfd;
+:root {
+    --black: #001114;
+    --aquaBlue: #20e5ff;
+    --orange: #ffb13d;
+    --green: #0af107;
+    --pink: #eb18bd;
+    --white: #fbfdfd;
 }
 
-#skills{
+#skills {
     position: relative;
     width: 100%;
-    height:800px;
+    height: 800px;
 
 }
 
-#position{
+#position {
     position: absolute;
     left: 75%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
-#skills-box{
-position: relative;
-width:280px ;
-height: 280px;
-transform-style: preserve-3d;
-animation: animate1 10s linear infinite;
+#skills-box {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    transform-style: preserve-3d;
+    animation: animate1 10s linear infinite;
 }
 
-@keyframes animate1{
-    0%{
-        transform:perspective(1000px) rotateY(0) ;
+@keyframes animate1 {
+    0% {
+        transform: perspective(1000px) rotateY(0);
     }
-    100%{
-        transform:perspective(1000px) rotateY(360deg) ;
+
+    100% {
+        transform: perspective(1000px) rotateY(360deg);
     }
 }
 
-#skills-box span{
+#skills-box span {
     position: absolute;
     top: 0;
     left: 0;
@@ -49,7 +50,7 @@ animation: animate1 10s linear infinite;
     transform: rotateY(calc(var(--i) * 120deg)) translateZ(200px);
 }
 
-#skills-box span img{
+#skills-box span img {
     position: absolute;
     top: 0;
     left: 0;
@@ -59,48 +60,135 @@ animation: animate1 10s linear infinite;
 }
 
 
-#skill-title{
+#skill-title {
     position: absolute;
     top: 1%;
     left: 50%;
-    transform:translate(-50%,0) ;
+    transform: translate(-50%, 0);
     font-size: 3.5em;
 }
 
-#skill-container{
-width: 450px;
-height: 300px;
-position: relative;
-left: 5%;
-top: 32%;
+#skill-container {
+    width: 450px;
+    height: 300px;
+    position: relative;
+    left: 5%;
+    top: 32%;
 }
 
-.skill-ranks{
+.skill-ranks {
     width: 450px;
     height: 100px;
     position: relative;
-    }    
+}
 
 .title {
     position: absolute;
-font-size: 2em;
-left: 50%;
-transform: translate(-50%,0);
+    font-size: 2em;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
-.grey{
+.grey {
     width: 400px;
     height: 20px;
     background: rgb(156, 156, 156);
     position: absolute;
     top: 53%;
-    left:50px;
+    left: 50px;
     border-radius: 20px;
+}
+
+
+.skill-ranks span {
+    width: 400px;
+    height: 20px;
+    position: absolute;
+    top: 53%;
+    left: 50px;
+    border-radius: 20px;
+    background: var(--aquaBlue);
+    z-index: 1;
+}
+
+
+#html-rank {
+    width: 350px;
+}
+
+#css-rank {
+    width: 200px;
+}
+
+#js-rank {
+    width: 80px;
+}
+
+.percent {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    font-size: 1.5em;
+}
+
+@media (max-width: 420px) {
+    #skills {
+        height: 1050px;
+    }
+
+    #position {
+        left: 50%;
+        top: 35%;
+    }
+
+    #skills-box {
+        width: 180px;
+        height: 180px;
+    }
+
+    #skills-box span {
+        transform: rotateY(calc(var(--i) * 120deg)) translateZ(120px);
+    }
+
+    #skill-title {
+        font-size: 1.8em;
+        top: 8%;
+    }
+
+    #skill-container {
+        width: 300px;
+        height: 300px;
+        position: relative;
+        left: 15px;
+        top: 60%;
+    }
+
+    .skill-ranks {
+        width: 300px;
+        height: 100px;
+        position: relative;
+    }
+
+    .title {
+        position: absolute;
+        font-size: 2em;
+        left: 60%;
+        transform: translate(-50%, 0);
+    }
+
+    .grey {
+        width: 280px;
+        height: 20px;
+        background: rgb(156, 156, 156);
+        position: absolute;
+        top: 53%;
+        left: 50px;
+        border-radius: 20px;
     }
 
 
-    .skill-ranks span{
-        width: 400px;
+    .skill-ranks span {
+        width: 280px;
         height: 20px;
         position: absolute;
         top: 53%;
@@ -108,109 +196,26 @@ transform: translate(-50%,0);
         border-radius: 20px;
         background: var(--aquaBlue);
         z-index: 1;
-        }
-
-
-#html-rank{
-    width: 350px;
-}
-
-#css-rank{
-    width: 200px;
-}
-
-#js-rank{
-    width: 80px;
-}
-.percent{
- position: absolute;
-top: 50%;
-left: 0;
-font-size: 1.5em;
-}
-
-@media (max-width: 420px) {
-    #skills{
-height: 1050px;
     }
 
-    #position{
-        left: 50%;
-        top: 35%;
-    }
-    
-    #skills-box{
-        width:180px ;
-        height: 180px;
-    }
-    #skills-box span{
-        transform: rotateY(calc(var(--i) * 120deg)) translateZ(120px);
-    }
-    #skill-title{
-        font-size: 1.8em;
-        top: 8%;
-    }
 
-    #skill-container{
-        width: 300px;
-        height: 300px;
-        position: relative;
-        left: 15px;
-        top: 60%;
-        }
-
-    .skill-ranks{
-        width: 300px;
-        height: 100px;
-        position: relative;
-        }    
-    
-    .title {
-        position: absolute;
-    font-size: 2em;
-    left: 60%;
-    transform: translate(-50%,0);
-    }
-    
-    .grey{
-        width: 280px;
-        height: 20px;
-        background: rgb(156, 156, 156);
-        position: absolute;
-        top: 53%;
-        left:50px;
-        border-radius: 20px;
-        }
-    
-    
-        .skill-ranks span{
-            width: 280px;
-            height: 20px;
-            position: absolute;
-            top: 53%;
-            left: 50px;
-            border-radius: 20px;
-            background: var(--aquaBlue);
-            z-index: 1;
-            }
-    
-    
-    #html-rank{
+    #html-rank {
         width: 244px;
     }
-    
-    #css-rank{
+
+    #css-rank {
         width: 134px;
     }
-    
-    #js-rank{
+
+    #js-rank {
         width: 50px;
     }
-    .percent{
-     position: absolute;
-    top: 50%;
-    left: 0;
-    font-size: 1.5em;
+
+    .percent {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        font-size: 1.5em;
     }
-    
+
 }

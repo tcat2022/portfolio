@@ -1,94 +1,94 @@
-:root{
-    --black: #001114; 
-    --aquaBlue:#20e5ff;
-    --orange:#ffb13d;
-    --green:#0af107;
-    --pink:#eb18bd;
-    --white:#fbfdfd;
+:root {
+    --black: #001114;
+    --aquaBlue: #20e5ff;
+    --orange: #ffb13d;
+    --green: #0af107;
+    --pink: #eb18bd;
+    --white: #fbfdfd;
 }
 
-#projects{
-position: relative;
-width: 100%;
-height: 700px;
+#projects {
+    position: relative;
+    width: 100%;
+    height: 700px;
 }
 
-#projects-container{
-width: 96%;
-left: 2%;
-height: 100%;
-position: relative;
-display: flex;
-justify-content: space-between;
-align-items: center;
-margin-right: 2%;
-overflow: hidden;
+#projects-container {
+    width: 96%;
+    left: 2%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 2%;
+    overflow: hidden;
 
 }
 
 
 
-.web-projects{
+.web-projects {
     border: 2px solid var(--aquaBlue);
-   height: 300px;
-   width: 300px;
-   transition: transform 1s;
-   overflow: hidden;
-   position: relative;
-   border-radius: 8px;
+    height: 300px;
+    width: 300px;
+    transition: transform 1s;
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
     top: 30px;
 }
 
-.web-projects:hover > .project-imgs{
+.web-projects:hover>.project-imgs {
     transform: scale(1.2);
-  
+
 }
 
-.project-imgs{
-max-width: 100%;
-z-index: -1;
-display: block;
-height: 100%;
-object-fit: cover;
-transition: transform .5s;
+.project-imgs {
+    max-width: 100%;
+    z-index: -1;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .5s;
 }
 
-.web-projects:hover  .project-titles{
-    transform: translateY(-110px)   translate(-50%,0);
- 
+.web-projects:hover .project-titles {
+    transform: translateY(-110px) translate(-50%, 0);
+
 }
 
-.web-projects:hover .color-layer{
-opacity: 100%;
+.web-projects:hover .color-layer {
+    opacity: 100%;
 }
 
-.web-projects:hover .web-link{
-    transform: translateY(0) translate(-50%,-50%);
-   
+.web-projects:hover .web-link {
+    transform: translateY(0) translate(-50%, -50%);
+
 }
 
-.web-link:hover{
+.web-link:hover {
     background: var(--aquaBlue);
     color: white;
 }
 
-.color-layer{
-width: 100%;
-height: 100%;
-background: linear-gradient(to bottom , rgba(0,0,0,0.6), var(--aquaBlue));
-position: absolute;
-left: 0;
-bottom: 0;
-overflow: hidden;
-opacity: 0;
-transition: .5s;
+.color-layer {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), var(--aquaBlue));
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: .5s;
 }
 
-.project-titles{
+.project-titles {
     position: absolute;
     top: 80%;
     left: 50%;
-    transform: translate(-50%,0);
+    transform: translate(-50%, 0);
     font-size: 20px;
     color: var(--white);
     font-weight: bold;
@@ -97,63 +97,65 @@ transition: .5s;
     z-index: 1;
 }
 
-.web-link{
+.web-link {
     position: absolute;
     left: 50%;
     top: 80%;
-    transform: translate(-50%,-50%) translateY(20px);
+    transform: translate(-50%, -50%) translateY(20px);
     color: var(--aquaBlue);
     width: 60px;
     height: 60px;
     background: white;
     font-size: 20px;
-  border-radius: 50%;
-  line-height: 60px;
-  text-align: center;
-  transition: .5s;
+    border-radius: 50%;
+    line-height: 60px;
+    text-align: center;
+    transition: .5s;
 }
 
-#project-title{
+#project-title {
     position: absolute;
     top: 1%;
     left: 50%;
-    transform:translate(-50%,0) ;
+    transform: translate(-50%, 0);
     font-size: 3.5em;
 }
 
 @media (max-width: 420px) {
-    #projects{
+    #projects {
         position: relative;
         width: 100%;
         height: 1400px;
-        }
+    }
 
-    #projects-container{
+    #projects-container {
         width: 100%;
         height: 1200px;
-       position: absolute;
-       left: 50%;
-       top: 100px;
-       transform: translate(-50%,0);
-flex-direction: column;
-justify-content: unset;
+        position: absolute;
+        left: 50%;
+        top: 100px;
+        transform: translate(-50%, 0);
+        flex-direction: column;
+        justify-content: unset;
     }
 
-    .web-projects{
-       height: 250px;
-       width: 90%;
-       border-radius: 5px;
-       margin-top: 35px;
+    .web-projects {
+        height: 250px;
+        width: 90%;
+        border-radius: 5px;
+        margin-top: 35px;
     }
-    .project-imgs{
+
+    .project-imgs {
         width: 100%;
         z-index: -1;
         display: block;
         height: 100%;
         object-fit: cover;
         transition: transform .5s;
-        }
-#project-title{
+    }
+
+    #project-title {
         font-size: 1.8em;
         top: 2.5%;
     }
