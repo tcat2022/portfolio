@@ -301,7 +301,8 @@ br {
   display: none;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 450px)
+{
 
   .fa-solid {
     display: block;
